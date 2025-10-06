@@ -1,0 +1,175 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  color: #333;
+  background-color: #fff;
+  line-height: 1.6;
+}
+
+/* ----- HEADER ----- */
+#h-arriba {
+  width: 100%;
+  height: 4rem;
+  background: linear-gradient(to right, #874DD7, #089D12);
+}
+
+#h-abajo {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+}
+
+.logo {
+  width: 60px;
+  margin-right: 1rem;
+}
+
+/* ----- PORTADA ----- */
+#portada {
+  text-align: center;
+  padding-bottom: 2rem;
+}
+
+#portada img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.portada-texto {
+  padding: 1rem;
+}
+
+.portada-texto h2 {
+  margin-top: 1rem;
+  font-size: 1.8rem;
+}
+
+.portada-texto p {
+  margin: 1rem 0;
+  font-size: 1rem;
+  padding: 0 1rem;
+}
+
+.boton, .boton-portada {
+  display: inline-block;
+  background-color: #874DD7;
+  color: #fff;
+  padding: 0.5rem 1.2rem;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s;
+  width: 100%;
+}
+
+.boton:hover, .boton-portada:hover {
+  background-color: #089D12;
+}
+
+/* ----- PRINCIPIOS ----- */
+#principios {
+  background-color: #733FA3;
+  color: white;
+  text-align: center;
+  padding: 2rem 1rem;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.4);
+}
+
+.principios-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.img-bullet {
+  background-color: white;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 0.5rem;
+}
+
+.img-bullet img {
+  width: 60%;
+  height: auto;
+}
+
+/* ----- NOTICIAS ----- */
+#noticias {
+  text-align: center;
+  padding: 2rem 1rem;
+}
+
+.cards-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.card {
+  width: 90%;
+  max-width: 400px;
+  background-color: #f8f8f8;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  overflow: hidden;
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+}
+
+.card-texto {
+  padding: 1rem;
+}
+
+/* ----- FOOTER ----- */
+footer {
+  background-color: #733FA3;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.9rem;
+}
+
+/* ----- RESPONSIVE ----- */
+@media (min-width: 768px) {
+  .principios-container {
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .cards-container {
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .card {
+    max-width: 300px;
+  }
+
+  .boton {
+    margin-top: 20px;
+    width: 50%;
+  }
+
+  .boton-portada {
+    width: 20%;
+  }
+}
