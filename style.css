@@ -58,7 +58,7 @@ body {
   padding: 0 1rem;
 }
 
-.boton, .boton-portada {
+.boton, .boton-portada, .boton-info {
   display: inline-block;
   background-color: #874DD7;
   color: #fff;
@@ -68,10 +68,15 @@ body {
   font-weight: bold;
   transition: 0.3s;
   width: 100%;
+  text-align: center;
 }
 
-.boton:hover, .boton-portada:hover {
+.boton:hover, .boton-portada:hover, .boton-info:hover {
   background-color: #089D12;
+}
+
+.boton-info {
+  width: 90%;
 }
 
 /* ----- PRINCIPIOS ----- */
@@ -148,6 +153,35 @@ footer {
   font-size: 0.9rem;
 }
 
+footer a{
+  color: #fff;
+}
+
+#info {
+  font-size: 1rem;
+  padding: 1rem;
+}
+
+#info p {
+  margin-top: 15px;
+}
+
+#video {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px 0;
+}
+
+#video  h2 {
+  margin: 20px 0;
+}
+
+#video-1 {
+  width: 80%;
+  height: auto; 
+}
+
 /* ----- RESPONSIVE ----- */
 @media (min-width: 768px) {
   .principios-container {
@@ -169,7 +203,11 @@ footer {
     width: 50%;
   }
 
-  .boton-portada {
+  .boton-portada, .boton-info {
     width: 20%;
   }
+  #video-1 {
+  width: 50%;
+  height: auto; 
+}
 }
